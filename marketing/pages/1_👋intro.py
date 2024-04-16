@@ -70,4 +70,15 @@ def main():
       14. `pdays` - number of days that passed after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
       15. `previous` - number of contacts performed before this campaign for this client (numeric)
       16. `poutcome` - outcome of the previous marketing campaign (categorical: "
-      """
+
+        #### Output Variable (Desired Target)
+        17. `y` - has the client subscribed a term deposit? (binary: "yes", "no")
+
+        ### Missing Attribute Values
+        None
+    """
+
+    st.markdown(markdown_content, unsafe_allow_html=True)
+
+if __name__ == "__main__":
+    main()
