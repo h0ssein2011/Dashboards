@@ -1,6 +1,6 @@
 pandas == 2.2.1
 numpy == 1.26.4
-plotly == 5.20.0
+plotly == 5.21.0
 nbformat == 5.10.3
 sqlalchemy == 2.0.29
 psycopg2-binary == 2.9.9
