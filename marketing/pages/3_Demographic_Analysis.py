@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
-from main import set_sessions
+from main import load_data
 
 try:
     bank , bank_addition  = st.session_state['bank_data']
 except:
-    st.write('data did not loaded')
-    set_sessions()
-
+    load_data()
+    bank , bank_addition  = st.session_state['bank_data']
 
 
 st.markdown('### Bank sample data', unsafe_allow_html=True)
