@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
-from main import set_sessions
+from streamlit_app import set_sessions
 
-try:
-    bank , bank_addition  = st.session_state['bank_data']
-except:
-    st.write('data did not loaded')
+if 'bank_data' not in st.session_state:
     set_sessions()
+    bank , bank_addition  = st.session_state['bank_data']
+else:
+    bank , bank_addition  = st.session_state['bank_data']
+
+
 
 
 
