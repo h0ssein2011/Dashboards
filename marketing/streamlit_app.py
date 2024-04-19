@@ -15,7 +15,6 @@ def main():
 
         """
     st.markdown(markdown_content , unsafe_allow_html=True)
-st.write('test app')
 
 def load_data():
     path = Path(__file__).parent
