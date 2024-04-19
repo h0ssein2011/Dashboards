@@ -13,8 +13,8 @@ else:
     bank , bank_addition  = st.session_state['bank_data']
 
 selected_jobs = st.sidebar.multiselect("job",bank.job.unique(),default=bank.job.unique())
-selected_marital = st.sidebar.multiselect("job",bank.marital.unique(),default=bank.marital.unique())
-selected_edu = st.sidebar.multiselect("job",bank.education.unique(),default=bank.education.unique())
+selected_marital = st.sidebar.multiselect("marital status",bank.marital.unique(),default=bank.marital.unique())
+selected_edu = st.sidebar.multiselect("education level",bank.education.unique(),default=bank.education.unique())
 
 bank = bank.query('job.isin(@selected_jobs) and marital.isin(@selected_marital) and education.isin(@selected_edu) ')
 
