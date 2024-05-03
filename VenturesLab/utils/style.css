@@ -1,0 +1,19 @@
+.kpi-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.kpi {
+    text-align: center;
+    width: 20%; /* Adjust the width based on your requirement */
+}
+.kpi .number {
+    font-size: 24px;
+    font-weight: bold;
+}
+.kpi .label {
+    font-size: 18px;
+    color: grey;
+    margin-top: 5px;
+}
