@@ -8,7 +8,6 @@ from utils.data_manager import set_sessions
 from utils.create_sidebar import filter_data
 from utils.make_charts import Create_line_chart
 
-st.set_page_config(layout="wide")
 
 if 'player_data' not in st.session_state:
     set_sessions()

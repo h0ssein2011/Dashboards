@@ -12,8 +12,6 @@ from pathlib import Path
 
 
 
-st.set_page_config(layout="wide")
-
 if 'player_data' not in st.session_state:
     set_sessions()
     data = st.session_state['player_data']
