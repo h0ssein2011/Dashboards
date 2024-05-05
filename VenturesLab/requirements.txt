@@ -9,4 +9,3 @@ matplotlib
 watchdog
 streamlit-extras
 streamlit
-PIL
