@@ -9,7 +9,6 @@ from utils.data_manager import format_number
 import plotly.graph_objects as go
 import plotly.express as px
 from pathlib import Path
-import pandas as pd
 
 
 

@@ -1,13 +1,12 @@
 import streamlit as st
 import pandas as pd
+from pathlib import Path
+import plotly.graph_objects as go
+import plotly.express as px
+
 from utils.data_manager import set_sessions
 from utils.create_sidebar import filter_data
 from utils.make_charts import Create_line_chart
-from pathlib import Path
-
-
-import plotly.graph_objects as go
-import plotly.express as px
 
 st.set_page_config(layout="wide")
 
