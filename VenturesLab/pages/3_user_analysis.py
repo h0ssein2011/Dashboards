@@ -16,17 +16,7 @@ if 'player_data' not in st.session_state:
 else:
     data = st.session_state['player_data']
 
-
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-path = Path(__file__).parent
-local_css(path / '../utils/style.css')
-
-
 data,timeframe = filter_data(data)
-
 
 def calc_kpis(data):
     count_users = data.user_id.nunique()
@@ -66,29 +56,3 @@ fig = Create_line_chart(grouped
 
 
 st.plotly_chart(fig)
-
-
-
-
-# grouped = casino_players.groupby(['brand',casino_players.date.dt.strftime('%Y-%m')]).agg({
-#                 'casino_bet_amount':'sum',
-#                 }).reset_index().rename(columns={'casino_bet_amount':'casino_bet_amount'})
-# # st.write(grouped)
-# fig_casino = Create_line_chart(data=grouped,x='date'
-#                                ,y='casino_bet_amount',color='brand'
-#                                , title="casino_bet_amount per month"
-#                                ,x_title='month',y_title='Count users'
-#                                ,width=500
-#                                )
-# st.plotly_chart(fig_casino)
-# sport_players = data[data.sports_bet_amount > 0]
-# grouped = sport_players.groupby(['brand',sport_players.date.dt.strftime('%Y-%m')]).agg({
-#                 'sports_bet_amount':'sum',
-#                 }).reset_index().rename(columns={'sports_bet_amount':'sports_bet_amount'})
-# # st.write(grouped)
-# fig_sports = Create_line_chart(data=grouped,x='date',y='sports_bet_amount'
-#                                ,color='brand', title="sports_bet_amount per month"
-#                                ,x_title='month',y_title='Count users'
-#                                ,width=500
-#                                )
-# st.plotly_chart(fig_sports)

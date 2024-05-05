@@ -15,13 +15,6 @@ if 'player_data' not in st.session_state:
 else:
     data = st.session_state['player_data']
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-path = Path(__file__).parent
-local_css(path / '../utils/style.css')
-
 data,timeframe = filter_data(data)
 
 def calc_kpis(data):

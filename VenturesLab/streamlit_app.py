@@ -6,7 +6,7 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 path = Path(__file__).parent
-image = Image.open(path  / 'image/logo.png')#.resize((700,200))
+image = Image.open(path  / 'image/logo.png')
 width , height = image.size
 new_size = (int(width*0.6),int(height*0.6))
 image = image.resize(new_size)
@@ -20,9 +20,9 @@ def main():
         2. **Brand Analysis**
                 - Explore performance data for each of the three brands on a daily, weekly, and monthly basis.
         3. **User Analysis**
-                - Analyze user performance metrics segmented by daily, weekly, and monthly intervals.
+                - Analyze user performance metrics by daily, weekly, and monthly intervals.
 
-        You can see all codes developed with Python in my [Github link](https://github.com/h0ssein2011/Dashboards/tree/main/VenturesLab):
+        You can see all codes developed with Python in my [Github](https://github.com/h0ssein2011/Dashboards/tree/main/VenturesLab):
 
 
         """
