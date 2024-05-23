@@ -16,18 +16,7 @@ def main():
         """
     st.markdown(markdown_content , unsafe_allow_html=True)
 
-def load_data():
-    path = Path(__file__).parent
-    path_csv = path /'data/sales_data_sample.csv'
-    df = pd.read_csv(path_csv,encoding = "ISO-8859-1")
-    return df
 
-def set_sessions():
-    if 'sales_data' not in st.session_state:
-        st.session_state['sales_data'] = load_data()
-df = load_data()
-st.write(df.head())
 
 if __name__ == "__main__":
-    set_sessions()
     main()
