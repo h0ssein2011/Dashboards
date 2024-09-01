@@ -4,6 +4,7 @@ import pandas as pd
 
 
 def main():
+    st.set_page_config(layout="wide")
     markdown_content = """
         ### This is a sample dashboard develped in my free time to enjoy the time and explore marketing analysis
         ### there are 3 pages so far:
