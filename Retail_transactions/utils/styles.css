@@ -1,0 +1,19 @@
+/* styles.css */
+
+    .kpi-container {
+        background-color: #4cb5f5;  /* Light grey background */
+        padding: 5px;              /* Space inside the container */
+        border-radius: 5px;        /* Rounded corners */
+        margin-bottom: 5px;        /* Space below the container */
+        display: flex;
+        justify-content: space-around;
+        color:#f0f2f6;
+    }
+    .kpi-box {
+       background-color: #4cb5f5;  /* White background for each KPI */
+        padding: 10px 20px;         /* Space inside each KPI box */
+        border-radius: 8px;         /* Rounded corners for each KPI box */
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Shadow for a 3D effect */
+        text-align: center;
+        color:#f0f2f6;
+    }
