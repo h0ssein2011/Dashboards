@@ -1,2 +1,5 @@
 *.csv
-! /Users/hossein/Codes/Github/Dashboards/marketing/data/*.csv
+!marketing/
+!marketing/data/
+!marketing/data/*.csv
+
