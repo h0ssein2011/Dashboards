@@ -1,19 +1,50 @@
 /* styles.css */
 
-    .kpi-container {
-        background-color: #4cb5f5;  /* Light grey background */
-        padding: 5px;              /* Space inside the container */
-        border-radius: 5px;        /* Rounded corners */
-        margin-bottom: 5px;        /* Space below the container */
-        display: flex;
-        justify-content: space-around;
-        color:#f0f2f6;
-    }
-    .kpi-box {
-       background-color: #4cb5f5;  /* White background for each KPI */
-        padding: 10px 20px;         /* Space inside each KPI box */
-        border-radius: 8px;         /* Rounded corners for each KPI box */
-        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Shadow for a 3D effect */
-        text-align: center;
-        color:#f0f2f6;
-    }
+body {
+    background-color: #7fa6f6;
+    margin: 0;
+    padding: 0;
+}
+.kpi-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 0; /* Remove any top margin */
+    padding-top: 0; /* Remove any top padding */
+}
+.kpi-box {
+    background-color: #9eb2f3;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 18%;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+.kpi-box:hover {
+    transform: translateY(-5px);
+}
+.kpi-box h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;
+
+}
+.kpi-box p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.main-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+   color:#3498db;
+}

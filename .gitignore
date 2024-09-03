@@ -3,3 +3,9 @@
 !marketing/data/
 !marketing/data/*.csv
 
+!Retail_transactions/
+!Retail_transactions/data/
+!Retail_transactions/data/*.csv
+
+
+
